@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdom Hotel</title>
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="icon" href="Assets/images/bellhop_hotel_baggage_service_icon_147424.png">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Kingdom Hotel</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- Toggle Button -->
+        <div class="toggle-btn" onclick="toggleNavbar()">
+            &#9776; <!-- Hamburger icon -->
+        </div>
+    </nav>
+
+    <script src="script.js">
+        function toggleNavbar() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
+
+    </script>
+</body>
+</html>

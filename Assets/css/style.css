@@ -1,0 +1,85 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: cursive;
+    background-color: #FFFFF0; /* Light ivory */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7E7CE; /* Light beige */
+    padding: 10px 20px;
+    position: relative;
+}
+
+/* Logo */
+.navbar .logo h1 {
+    font-size: 24px;
+    color: #8C6E4E; /* A darker shade of beige */
+}
+
+/* Nav Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #8C6E4E; /* A darker shade of beige */
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #6A4E23; /* Slightly darker shade for hover effect */
+}
+
+/* Toggle Button */
+.toggle-btn {
+    display: none;
+    font-size: 30px;
+    color: #8C6E4E;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .nav-links {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #F7E7CE; /* Light beige */
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+}
